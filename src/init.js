@@ -1,8 +1,6 @@
-const TICKRATE = 3000;
+import gameState from "./gameState";
 
-function tick() {
-  console.log("Tick", Date.now());
-}
+const TICKRATE = 3000;
 
 async function init() {
   console.log("Starting Game");
@@ -13,7 +11,7 @@ async function init() {
     const now = Date.now();
 
     if (nextTimeToTick <= now) {
-      tick();
+      gameState.tick();
       nextTimeToTick = now + TICKRATE;
     }
 
