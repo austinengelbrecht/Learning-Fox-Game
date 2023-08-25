@@ -10,3 +10,6 @@ export const getNextHungerTime = (clock) =>
 
 export const getNextDieTime = (clock) =>
   Math.floor(Math.random() * 3) + 5 + clock;
+
+export const getNextPoopTime = (clock) =>
+  Math.floor(Math.random() * 3) + 5 + clock;
